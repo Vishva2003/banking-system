@@ -5,59 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/sematic.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantc.min.css"
     />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/mast.css">
     <link rel="stylesheet" href="style.css">
     
     <title>Customer</title>
 </head>
 <body class="customers">
+  <div>
     <nav>
-        <div class="navbar">
-            <div class="logoname">
-            <img src="assets\VISHVA.png" alt="logo">
-            <h3><a href="#">VisGo Banking</a></h3>
-            </div>
+      <div class="navbar">
+          <div class="logoname">
+          <img src="assets\VISHVA.png" alt="logo">
+          <h3><a href="#">VisGo Banking</a></h3>
+          </div>
 
-            <div class="menuitem">
-                        <ul class="menuitems">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Customer </a></li>
-                            <li><a href="">About</a></li>
-                        </ul>
-            </div>
-        </div>
-    </nav>
+          <div class="menuitem">
+                      <ul class="menuitems">
+                          <li><a href="">Home</a></li>
+                          <li><a href="">Customer </a></li>
+                          <li><a href="">About</a></li>
+                      </ul>
+          </div>
+      </div>
+  </nav>
+  </div>
 
-    <div class="ui-container-centered">
+    <div class="ui container centered">
         <!-- <h1>Name: Samriddhi & Senpai</h1> -->
         <!-- <h3>Net Balance: $<span>1000</span></h3> -->
         <!-- Error message -->
         <div id="negative" class="negativemsg" >
           <div class="header">
+            <i class="ri-error-warning-line"></i>
             Low Balance!!
-          <i class="ri-close-circle-fill" onclick="cancel('negative')"></i>
-
           </div>
+          <i class="ri-close-line"  onclick="cancel('negative')"></i>
         </div>
         <div id="positive" class="positivemsg" >
           <div class="header">
+            <i class="ri-check-line"></i>
             Success!! The amount has been transfered
-          <i class="ri-close-circle-fill" onclick="cancel('positive')"></i>
-
           </div>
+          <i class="ri-close-line" onclick="cancel('positive')"></i>
         </div>
         <!-- button-upload -->
-          <div class="ui buttons choice">
-            <button class="ui green button " onclick="displayForm()">Send Money</button>
+          <div class="uibuttons">
+            <button class="sendbutton" onclick="displayForm()"><span class="text">Send Money</span></button>
             <div class="or"></div>
-            <button class="ui blue button" onclick="checkBalance()">Check Balance</button>
+            <button class="checkbutton" onclick="checkBalance()"><span class="text">check Balance</span></button>
           </div>
           <!--  for check balance -->
-          <div class="ui segment" id="checkBalance">
-            <h1 class="ui center aligned icon header">
+          <div class="checkBalance" id="checkBalance">
+            <h1 class="checkBalanceheader">
               <img src="images/profile/male.svg">
               <br>
               Hello Vishva
@@ -86,7 +89,7 @@
             <button class="ui inverted secondary button" onclick="cancel('transfer')">Cancel</button>
           </div>
           <!-- Customers -->
-        <table class="wrap-table100">
+          <table class="wrap-table100">
             <thead >
               <tr class="table100-head">
               <th class="column1">Name</th>
@@ -105,7 +108,7 @@
                     </h4>
                 </td>
                 <td class="column2">Abinaya@gmail.com</td>
-                <td class="column3" id="Mark">15000</td>
+                <td class="column3" id="Abinaya">15000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
@@ -131,7 +134,7 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">Archana@gmail.com</td>
-                <td class="column3" id="Scarlett" data-label="Job">40000</td>
+                <td class="column3" id="Archana" data-label="Job">40000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
@@ -144,7 +147,7 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">youknowwhoiam@gmail.com</td>
-                <td class="column3" id="Tony" data-label="Job">20000</td>
+                <td class="column3" id="Forgio" data-label="Job">20000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
@@ -157,7 +160,7 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">anukanum@gmail.com</td>
-                <td class="column3" id="Ryan" data-label="Job">50100</td>
+                <td class="column3" id="Lingesh" data-label="Job">50100</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
@@ -170,7 +173,7 @@
                     </h4>
                 </td>
                 <td class="column2"data-label="Email">Kadikanum@gmail.com</td>
-                <td class="column3"id="Sam" data-label="Job">24000</td>
+                <td class="column3"id="Soorya" data-label="Job">24000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
@@ -183,7 +186,7 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">Pudikanum@gmail.com</td>
-                <td class="column3" id="Ritwik" data-label="Job">20000</td>
+                <td class="column3" id="Keerthivasan" data-label="Job">20000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
@@ -196,7 +199,7 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">Anju@gmail.com</td>
-                <td class="column3" id="Keanu" data-label="Job">20500</td>
+                <td class="column3" id="Anju" data-label="Job">20500</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
@@ -209,7 +212,7 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">vagabond@gmail.com</td>
-                <td class="column3" id="Keanu" data-label="Job">50000</td>
+                <td class="column3" id="Vishva" data-label="Job">50000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
@@ -222,15 +225,15 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">Halfboil@gmail.com</td>
-                <td class="column3" id="Keanu" data-label="Job">14314</td>
+                <td class="column3" id="Varshini" data-label="Job">14314</td>
               </tr>
             </tbody>
           </table>
+        
     </div>
     <footer class="ui bottom fixed inverted one item menu footer">
-      <p><b>VisGo Banking @2023 All rights Reserved
-      </b></p>
-      <p>Presented by Visfoliohub</p>
+      <p><b>VisGo Banking @2023 All Rights Reserved </b></p>
+      <p>- Presented by Visfoliohub</p>
     </footer>
     <script src="script.js"></script>
     <!-- <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script> -->

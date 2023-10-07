@@ -48,7 +48,7 @@ const sendData=()=>{
 const checkBalance=()=>{
     document.getElementById("negative").style.display="none";
     document.getElementById("positive").style.display="none";
-    document.getElementById("checkBalance").style.display="block";
+    document.getElementById("checkBalance").style.display="flex";
     document.getElementById("transfer").style.display="none";
     document.getElementById("total").innerText=total;
 }
