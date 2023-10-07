@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/sematic.min.css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css">
     
@@ -34,16 +35,18 @@
         <!-- <h1>Name: Samriddhi & Senpai</h1> -->
         <!-- <h3>Net Balance: $<span>1000</span></h3> -->
         <!-- Error message -->
-        <div id="negative" class="ui negative message" >
-          <i class="close icon"  onclick="cancel('negative')"></i>
+        <div id="negative" class="negativemsg" >
           <div class="header">
             Low Balance!!
+          <i class="ri-close-circle-fill" onclick="cancel('negative')"></i>
+
           </div>
         </div>
-        <div id="positive" class="ui positive message" >
-          <i class="close icon" onclick="cancel('positive')"></i>
+        <div id="positive" class="positivemsg" >
           <div class="header">
             Success!! The amount has been transfered
+          <i class="ri-close-circle-fill" onclick="cancel('positive')"></i>
+
           </div>
         </div>
         <!-- button-upload -->
@@ -57,7 +60,7 @@
             <h1 class="ui center aligned icon header">
               <img src="images/profile/male.svg">
               <br>
-              Hello Ritik
+              Hello Vishva
             </h1>
             <div>
               <h3>Current Balance: ₹<span id="total">0</span></h3>  
@@ -88,7 +91,7 @@
               <tr class="table100-head">
               <th class="column1">Name</th>
               <th class="column2">Email</th>
-              <th class="column3">Job</th>
+              <th class="column3">Balance</th>
             </tr></thead>
             <tbody>
               <tr>
@@ -102,7 +105,7 @@
                     </h4>
                 </td>
                 <td class="column2">Abinaya@gmail.com</td>
-                <td class="column3" id="Mark">4000</td>
+                <td class="column3" id="Mark">15000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
@@ -114,28 +117,28 @@
                       </div>
                     </h4>
                 </td>
-                <td class="column2" data-label="Email">ewatson@gmail.com</td>
-                <td class="column3" id="Aswani" data-label="Job">60000</td>
+                <td class="column2" data-label="Email">Aswani@gmail.com</td>
+                <td class="column3" id="Aswani" data-label="Job">55000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
                         <img src="./images/profile/male.svg" class="ui mini rounded image">
                         <div class="content">
-                          Scarlett
+                          Archana
                         </div>
                       </div>
                     </h4>
                 </td>
-                <td class="column2" data-label="Email">blackwidow@gmail.com</td>
-                <td class="column3" id="Scarlett" data-label="Job">4000</td>
+                <td class="column2" data-label="Email">Archana@gmail.com</td>
+                <td class="column3" id="Scarlett" data-label="Job">40000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
                         <img src="./images/profile/female.svg" class="ui mini rounded image">
                         <div class="content">
-                          Tony
+                          Forgio
                         </div>
                       </div>
                     </h4>
@@ -148,38 +151,38 @@
                     <h4 class="ui image header">
                         <img src="./images/profile/male.svg" class="ui mini rounded image">
                         <div class="content">
-                          Ryan
+                          Lingesh
                         </div>
                       </div>
                     </h4>
                 </td>
-                <td class="column2" data-label="Email">happylent@gmail.com</td>
-                <td class="column3" id="Ryan" data-label="Job">10100</td>
+                <td class="column2" data-label="Email">anukanum@gmail.com</td>
+                <td class="column3" id="Ryan" data-label="Job">50100</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
                         <img src="./images/profile/female.svg" class="ui mini rounded image">
                         <div class="content">
-                          Sam
+                          Soorya
                         </div>
                       </div>
                     </h4>
                 </td>
-                <td class="column2"data-label="Email">huhh@gmail.com</td>
-                <td class="column3"id="Sam" data-label="Job">240298</td>
+                <td class="column2"data-label="Email">Kadikanum@gmail.com</td>
+                <td class="column3"id="Sam" data-label="Job">24000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
                         <img src="./images/profile/male.svg" class="ui mini rounded image">
                         <div class="content">
-                          Ritwik
+                          Keerthivasan
                         </div>
                       </div>
                     </h4>
                 </td>
-                <td class="column2" data-label="Email">ritwik@gmail.com</td>
+                <td class="column2" data-label="Email">Pudikanum@gmail.com</td>
                 <td class="column3" id="Ritwik" data-label="Job">20000</td>
               </tr>
               <tr>
@@ -187,13 +190,39 @@
                     <h4 class="ui image header">
                         <img src="./images/profile/female.svg" class="ui mini rounded image">
                         <div class="content">
-                          Keanu
+                          Anju
                         </div>
                       </div>
                     </h4>
                 </td>
-                <td class="column2" data-label="Email">matix@gmail.com</td>
-                <td class="column3" id="Keanu" data-label="Job">10101</td>
+                <td class="column2" data-label="Email">Anju@gmail.com</td>
+                <td class="column3" id="Keanu" data-label="Job">20500</td>
+              </tr>
+              <tr>
+                <td class="column1" data-label="Name">
+                    <h4 class="ui image header">
+                        <img src="./images/profile/female.svg" class="ui mini rounded image">
+                        <div class="content">
+                          Vishva
+                        </div>
+                      </div>
+                    </h4>
+                </td>
+                <td class="column2" data-label="Email">vagabond@gmail.com</td>
+                <td class="column3" id="Keanu" data-label="Job">50000</td>
+              </tr>
+              <tr>
+                <td class="column1" data-label="Name">
+                    <h4 class="ui image header">
+                        <img src="./images/profile/female.svg" class="ui mini rounded image">
+                        <div class="content">
+                          Varshini
+                        </div>
+                      </div>
+                    </h4>
+                </td>
+                <td class="column2" data-label="Email">Halfboil@gmail.com</td>
+                <td class="column3" id="Keanu" data-label="Job">14314</td>
               </tr>
             </tbody>
           </table>
