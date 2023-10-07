@@ -22,7 +22,7 @@ nav .navbar{
     margin: auto;
     justify-content: space-between;
     height: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 .logoname img{
@@ -56,7 +56,7 @@ nav .navbar .menuitems{
 }
 nav .navbar .menuitems li{
     list-style: none;
-    margin: 0 8px;
+    margin: 0 15px;
 }
 
 .menuitems li a{
@@ -83,7 +83,7 @@ nav .navbar .menuitems li{
 }
 
 .home{
-    background: url("assets/bankvector.jpg");
+    background: linear-gradient(#000000cc,rgba(0,0,0,0.8)),url(assets//bankvector.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -103,7 +103,7 @@ nav .navbar .menuitems li{
 }
 
 .home .welcome span{
-    color: rgb(17, 0, 255);
+    color: rgb(111, 0, 255);
 }
 
 .home .btn .button1{
@@ -149,7 +149,98 @@ nav .navbar .menuitems li{
     margin-top: 10px;
     position: absolute;
     top: 50%;
-    color: #fff;
+    color: #dddada;
     width: 100%;
     font-size: medium;
+}
+
+.wrap-table100 {
+    width: 1170px
+}
+
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative
+}
+
+table * {
+    position: relative
+}
+
+table td,table th {
+    padding-left: 8px
+}
+
+table thead tr {
+    height: 60px;
+    background: #36304a
+}
+
+table tbody tr {
+    height: 50px
+}
+
+table tbody tr:last-child {
+    border: 0
+}
+
+table td,table th {
+    text-align: left
+}
+
+table td.l,table th.l {
+    text-align: right
+}
+
+table td.c,table th.c {
+    text-align: center
+}
+
+table td.r,table th.r {
+    text-align: center
+}
+
+.table100-head th {
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5
+}
+
+tbody tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: gray;
+    line-height: 1.2;
+    font-weight: unset
+}
+
+tbody tr:hover {
+    color: #555;
+    background-color: #f5f5f5;
+    cursor: pointer
+}
+
+.column1 {
+    width: 260px;
+    padding-left: 40px
+}
+
+.column2 {
+    width: 160px
+}
+
+.column3 {
+    width: 245px
 }
