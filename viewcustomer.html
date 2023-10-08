@@ -25,8 +25,8 @@
 
           <div class="menuitem">
                       <ul class="menuitems">
-                          <li><a href="">Home</a></li>
-                          <li><a href="">Customer </a></li>
+                          <li><a href="intex.html">Home</a></li>
+                          <li><a href="viewcustomer.html">Customer </a></li>
                           <li><a href="">About</a></li>
                       </ul>
           </div>
@@ -38,7 +38,7 @@
         <!-- <h1>Name: Samriddhi & Senpai</h1> -->
         <!-- <h3>Net Balance: $<span>1000</span></h3> -->
         <!-- Error message -->
-        <div id="negative" class="negativemsg" >
+        <div id="negative" class="negativemsg">
           <div class="header">
             <i class="ri-error-warning-line"></i>
             Low Balance!!
@@ -70,23 +70,23 @@
             </div>
           </div>
           <!-- Transfer -->
-          <div class="ui segment" id="transfer">
-            <form class="ui form">
+          <div class="transfer" id="transfer">
+            <form class="form">
               <div class="field">
-                <div class="two fields">
-                  <div class="field">
+                <div class="twofields">
+                  <div class="fields">
                     <label>Customer Name</label>
-                    <input id="name" name="to" type="text" placeholder="Enter name here">
+                    <input id="name" name="name" type="text" placeholder="Enter name here">
                   </div>
-                  <div class="field">
+                  <div class="fields">
                     <label>Amount</label>
                     <input id="amount" name="amount" type="number" placeholder="Enter Amount">
                   </div>
                 </div>
               </div>  
-            </form>
-            <button class="ui inverted green button" onclick="sendData()">Transfer</button>
+              <button class="ui inverted green button" onclick="sendData()">Transfer</button>
             <button class="ui inverted secondary button" onclick="cancel('transfer')">Cancel</button>
+            </form>
           </div>
           <!-- Customers -->
           <table class="wrap-table100">
@@ -102,13 +102,13 @@
                     <h4 class="ui image header">
                         <img src="./images/profile/male.svg" class="ui mini rounded image">
                         <div class="content">
-                          Abinaya
+                          Asta
                         </div>
                       </div>
                     </h4>
                 </td>
-                <td class="column2">Abinaya@gmail.com</td>
-                <td class="column3" id="Abinaya">15000</td>
+                <td class="column2">pushpastyourlimits@gmail.com</td>
+                <td class="column3" id="Asta">15000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
