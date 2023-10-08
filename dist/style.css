@@ -267,21 +267,11 @@ tbody tr:hover {
 }
 
 .positivemsg {
-<<<<<<< HEAD
     padding: 10px;
-=======
-<<<<<<< HEAD:dist/style.css
-    padding: 10px;
-=======
->>>>>>> 458f99443ad9b02900d349d7f420236d03171ccf
     width: 800px;
     margin: 0 auto;
     justify-content: space-between;
     display: flex;
-<<<<<<< HEAD
-=======
->>>>>>> 35b0aabcdf52a71a18615b9505db5efb4f76eb5c:style.css
->>>>>>> 458f99443ad9b02900d349d7f420236d03171ccf
     color: #2e9904;
     border-radius: 3px 3px 3px 3px;
     height: 40px;
@@ -310,10 +300,6 @@ tbody tr:hover {
 .negativemsg {
     width: 800px;
     margin: 0 auto;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD:dist/style.css
->>>>>>> 458f99443ad9b02900d349d7f420236d03171ccf
     color: #9f2000;
     
   }
@@ -337,22 +323,6 @@ tbody tr:hover {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
-
-=======
-    display: flex;
-    justify-content: space-between;
-    color: #9F6000;
-    background-color: #f5caa3;
-  }
-
-.customers #transfer , .customers .positivemsg , .customers .negativemsg{
-    display: none;
-}
-
->>>>>>> 35b0aabcdf52a71a18615b9505db5efb4f76eb5c:style.css
->>>>>>> 458f99443ad9b02900d349d7f420236d03171ccf
 .uibuttons{
     display: flex;
     width: 100%;
@@ -520,10 +490,6 @@ tbody tr:hover {
     }
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD:dist/style.css
->>>>>>> 458f99443ad9b02900d349d7f420236d03171ccf
 
 /*visiblity*/
 
@@ -814,12 +780,8 @@ footer {
 .social-icons a{
     text-decoration: none;
     color: #888282;
-<<<<<<< HEAD
 }
 
-=======
-=======
->>>>>>> 458f99443ad9b02900d349d7f420236d03171ccf
 .checkBalance{
     width: 100%;
     justify-content: center;
@@ -887,8 +849,4 @@ footer {
     display: inline-flex;
     justify-content: space-between;
     margin: 5px;
-<<<<<<< HEAD
-=======
->>>>>>> 35b0aabcdf52a71a18615b9505db5efb4f76eb5c:style.css
->>>>>>> 458f99443ad9b02900d349d7f420236d03171ccf
 }
