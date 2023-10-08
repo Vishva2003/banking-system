@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantc.min.css"
-    />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./css/mast.css">
     <link rel="stylesheet" href="style.css">
     
     <title>Customer</title>
@@ -20,37 +15,37 @@
       <div class="navbar">
           <div class="logoname">
           <img src="assets\VISHVA.png" alt="logo">
-          <h3><a href="#">VisGo Banking</a></h3>
+          <h3><a href="intex.html">VisGo Banking</a></h3>
           </div>
 
           <div class="menuitem">
                       <ul class="menuitems">
-                          <li><a href="">Home</a></li>
-                          <li><a href="">Customer </a></li>
-                          <li><a href="">About</a></li>
+                          <li><a href="intex.html">Home</a></li>
+                          <li><a href="viewcustomer.html">Customer </a></li>
+                          <li><a href="about.html">About</a></li>
                       </ul>
           </div>
       </div>
   </nav>
   </div>
 
-    <div class="ui container centered">
+    <div class="container">
         <!-- <h1>Name: Samriddhi & Senpai</h1> -->
         <!-- <h3>Net Balance: $<span>1000</span></h3> -->
         <!-- Error message -->
-        <div id="negative" class="negativemsg" >
-          <div class="header">
-            <i class="ri-error-warning-line"></i>
-            Low Balance!!
+        <div id="negative" class="negativemsg">
+          <div class="header1">
+            <i id="red1" class="ri-error-warning-line">Low Balance!!</i>
+            <i id="red2" class="ri-close-line"  onclick="cancel('negative')"></i>
           </div>
-          <i class="ri-close-line"  onclick="cancel('negative')"></i>
+          
         </div>
         <div id="positive" class="positivemsg" >
-          <div class="header">
-            <i class="ri-check-line"></i>
-            Success!! The amount has been transfered
+          <div class="header1">
+            <i id="green1" class="ri-check-line">Success!! The amount has been transfered</i>
+            <i id="green2" class="ri-close-line" onclick="cancel('positive')"></i>
           </div>
-          <i class="ri-close-line" onclick="cancel('positive')"></i>
+          
         </div>
         <!-- button-upload -->
           <div class="uibuttons">
@@ -61,7 +56,7 @@
           <!--  for check balance -->
           <div class="checkBalance" id="checkBalance">
             <h1 class="checkBalanceheader">
-              <img src="images/profile/male.svg">
+              <img src="assets\corporate-user-icon.png">
               <br>
               Hello Vishva
             </h1>
@@ -70,23 +65,23 @@
             </div>
           </div>
           <!-- Transfer -->
-          <div class="ui segment" id="transfer">
-            <form class="ui form">
+          <div class="transfer" id="transfer">
+            <form class="form">
               <div class="field">
-                <div class="two fields">
-                  <div class="field">
+                <div class="twofields">
+                  <div class="field1">
                     <label>Customer Name</label>
-                    <input id="name" name="to" type="text" placeholder="Enter name here">
+                    <input id="name" name="name" type="text" placeholder="Enter name here">
                   </div>
-                  <div class="field">
+                  <div class="field1">
                     <label>Amount</label>
                     <input id="amount" name="amount" type="number" placeholder="Enter Amount">
                   </div>
                 </div>
               </div>  
             </form>
-            <button class="ui inverted green button" onclick="sendData()">Transfer</button>
-            <button class="ui inverted secondary button" onclick="cancel('transfer')">Cancel</button>
+            <button id="buttons" class="greenbutton" type="submit" onclick="sendData()">Transfer</button>
+            <button id="buttons" class="redbutton" onclick="cancel('transfer')">Cancel</button>  
           </div>
           <!-- Customers -->
           <table class="wrap-table100">
@@ -100,20 +95,20 @@
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
-                        <img src="./images/profile/male.svg" class="ui mini rounded image">
+                        <img src="assets\male-icon.png" class="ui mini rounded image">
                         <div class="content">
-                          Abinaya
+                          Asta
                         </div>
                       </div>
                     </h4>
                 </td>
-                <td class="column2">Abinaya@gmail.com</td>
-                <td class="column3" id="Abinaya">15000</td>
+                <td class="column2">pushpastyourlimits@gmail.com</td>
+                <td class="column3" id="Asta" data-label="balance">15000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
-                        <img src="./images/profile/female.svg" class="ui mini rounded image">
+                        <img src="assets\woman-icon.png" class="ui mini rounded image">
                         <div class="content">
                           Aswani
                         </div>
@@ -121,12 +116,12 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">Aswani@gmail.com</td>
-                <td class="column3" id="Aswani" data-label="Job">55000</td>
+                <td class="column3" id="Aswani" data-label="balance">55000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
-                        <img src="./images/profile/male.svg" class="ui mini rounded image">
+                        <img src="assets\woman-icon.png" class="ui mini rounded image">
                         <div class="content">
                           Archana
                         </div>
@@ -134,12 +129,12 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">Archana@gmail.com</td>
-                <td class="column3" id="Archana" data-label="Job">40000</td>
+                <td class="column3" id="Archana" data-label="balance">40000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
-                        <img src="./images/profile/female.svg" class="ui mini rounded image">
+                        <img src="assets\male-icon.png" class="ui mini rounded image">
                         <div class="content">
                           Forgio
                         </div>
@@ -147,12 +142,12 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">youknowwhoiam@gmail.com</td>
-                <td class="column3" id="Forgio" data-label="Job">20000</td>
+                <td class="column3" id="Forgio" data-label="balance">20000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
-                        <img src="./images/profile/male.svg" class="ui mini rounded image">
+                        <img src="assets\male-icon.png" class="ui mini rounded image">
                         <div class="content">
                           Lingesh
                         </div>
@@ -160,12 +155,12 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">anukanum@gmail.com</td>
-                <td class="column3" id="Lingesh" data-label="Job">50100</td>
+                <td class="column3" id="Lingesh" data-label="balance">50100</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
-                        <img src="./images/profile/female.svg" class="ui mini rounded image">
+                        <img src="assets\male-icon.png" class="ui mini rounded image">
                         <div class="content">
                           Soorya
                         </div>
@@ -173,12 +168,12 @@
                     </h4>
                 </td>
                 <td class="column2"data-label="Email">Kadikanum@gmail.com</td>
-                <td class="column3"id="Soorya" data-label="Job">24000</td>
+                <td class="column3"id="Soorya" data-label="balance">24000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
-                        <img src="./images/profile/male.svg" class="ui mini rounded image">
+                        <img src="assets\male-icon.png" class="ui mini rounded image">
                         <div class="content">
                           Keerthivasan
                         </div>
@@ -186,12 +181,12 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">Pudikanum@gmail.com</td>
-                <td class="column3" id="Keerthivasan" data-label="Job">20000</td>
+                <td class="column3" id="Keerthivasan" data-label="balance">20000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
-                        <img src="./images/profile/female.svg" class="ui mini rounded image">
+                        <img src="assets\woman-icon.png" class="ui mini rounded image">
                         <div class="content">
                           Anju
                         </div>
@@ -199,12 +194,12 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">Anju@gmail.com</td>
-                <td class="column3" id="Anju" data-label="Job">20500</td>
+                <td class="column3" id="Anju" data-label="balance">20500</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
-                        <img src="./images/profile/female.svg" class="ui mini rounded image">
+                        <img src="assets\male-icon.png" class="ui mini rounded image">
                         <div class="content">
                           Vishva
                         </div>
@@ -212,12 +207,12 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">vagabond@gmail.com</td>
-                <td class="column3" id="Vishva" data-label="Job">50000</td>
+                <td class="column3" id="Vishva" data-label="balance">54000</td>
               </tr>
               <tr>
                 <td class="column1" data-label="Name">
                     <h4 class="ui image header">
-                        <img src="./images/profile/female.svg" class="ui mini rounded image">
+                        <img src="assets\woman-icon.png" class="ui mini rounded image">
                         <div class="content">
                           Varshini
                         </div>
@@ -225,13 +220,13 @@
                     </h4>
                 </td>
                 <td class="column2" data-label="Email">Halfboil@gmail.com</td>
-                <td class="column3" id="Varshini" data-label="Job">14314</td>
+                <td class="column3" id="Varshini" data-label="balance">14314</td>
               </tr>
             </tbody>
           </table>
         
     </div>
-    <footer class="ui bottom fixed inverted one item menu footer">
+    <footer class="footer">
       <p><b>VisGo Banking @2023 All Rights Reserved </b></p>
       <p>- Presented by Visfoliohub</p>
     </footer>
