@@ -267,7 +267,14 @@ tbody tr:hover {
 }
 
 .positivemsg {
+<<<<<<< HEAD:dist/style.css
     padding: 10px;
+=======
+    width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+>>>>>>> 35b0aabcdf52a71a18615b9505db5efb4f76eb5c:style.css
     color: #2e9904;
     border-radius: 3px 3px 3px 3px;
     height: 40px;
@@ -296,6 +303,7 @@ tbody tr:hover {
 .negativemsg {
     width: 800px;
     margin: 0 auto;
+<<<<<<< HEAD:dist/style.css
     color: #9f2000;
     
   }
@@ -320,6 +328,18 @@ tbody tr:hover {
 }
 
 
+=======
+    display: flex;
+    justify-content: space-between;
+    color: #9F6000;
+    background-color: #f5caa3;
+  }
+
+.customers #transfer , .customers .positivemsg , .customers .negativemsg{
+    display: none;
+}
+
+>>>>>>> 35b0aabcdf52a71a18615b9505db5efb4f76eb5c:style.css
 .uibuttons{
     display: flex;
     width: 100%;
@@ -487,6 +507,7 @@ tbody tr:hover {
     }
 }
 
+<<<<<<< HEAD:dist/style.css
 
 /*visiblity*/
 
@@ -777,4 +798,73 @@ footer {
 .social-icons a{
     text-decoration: none;
     color: #888282;
+=======
+.checkBalance{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.checkBalance .checkBalanceheader{
+    margin: 20px auto;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+}
+
+.checkBalance .checkBalanceheader img{
+    justify-content: space-around;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: flex-start;
+    margin-bottom: -40px;
+}
+
+.customers .transfer ,.customers .checkBalance {
+    display: none;
+}
+
+/*transfer form*/
+
+.transfer{
+    text-align: center;
+    width: 100%;
+    margin: 15px auto;
+}
+
+.transfer .form{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.transfer .field{
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+}
+
+.transfer .field .twofields{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 5px;
+}
+
+.transfer .field .twofields .fields{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 5px;
+>>>>>>> 35b0aabcdf52a71a18615b9505db5efb4f76eb5c:style.css
 }
