@@ -15,6 +15,7 @@ nav{
     width: 100%;
     background-color: rgb(0, 0, 0);
     padding: 20px;
+    position: relative;
 }
 
 nav .navbar{
@@ -538,8 +539,6 @@ tbody tr:hover {
     margin: 0 auto;
     padding: 10px;
     height: 3em;
-
-    
 }
 
 .form .field1 label{
@@ -560,6 +559,8 @@ tbody tr:hover {
 /* CSS buttons */
 .transfer #buttons{
     margin:0 30px auto;
+    display: inline-block;
+    margin-top: 30px;
 }
 
 .transfer .greenbutton {
@@ -720,7 +721,6 @@ tbody tr:hover {
     flex-direction: column;
     
     /* Position at the bottom */
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -734,7 +734,7 @@ tbody tr:hover {
   /* Center-align the text in the footer */
 
 main{
-    background: linear-gradient(135deg,#292cf0cc,rgba(245, 6, 253, 0.726));
+    background: linear-gradient(90deg,#292cf0f6,rgba(245, 6, 253, 0.726));
 }
 .features {
     text-align: center;
@@ -766,7 +766,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -821,6 +820,7 @@ footer {
     text-align: center;
     width: 100%;
     margin: 15px auto;
+    height: 200px;
 }
 
 .transfer .form{
@@ -841,6 +841,7 @@ footer {
 .transfer .field .twofields{
     display: flex;
     flex-direction: column;
+    /* margin: 0 auto; */
     width: 400px;
     padding: 5px;
 }
